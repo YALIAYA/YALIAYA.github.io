@@ -27,3 +27,12 @@
     document.addEventListener("touchend", gestureEnd, false);
   }
 })(document);
+document.addEventListener("DOMContentLoaded", function () {
+
+    const sections = document.querySelectorAll(".section");
+
+    sections.forEach(function(section){
+        section.classList.add("visible");
+    });
+
+});
